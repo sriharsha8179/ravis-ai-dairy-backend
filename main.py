@@ -3,7 +3,7 @@ from database import engine
 import models
 from milk import router as milk_router
 from farmer import router as farmer_router
-from auth import router as auth_router
+from auth_routes import router as auth_router
 
 models.Base.metadata.create_all(bind=engine)
 
